@@ -1,5 +1,5 @@
 #featured_1 {
-    background-image: url(Creativity.jpg);
+    background-image: url(daydreamer.png);
 }
 
 .navbar-default {
@@ -10,14 +10,14 @@
 
 .navbar-default .navbar-nav>li>a {
     font-size: 0.7em;
-    color: white;
+    color: grey;
     padding: 0 3px;
     margin: 15px 3px;
     border: solid 1px white;
 }
 
 .navbar-brand {
-    color: white !important;
+    color: grey !important;
     font-weight: 200;
 }
 
@@ -33,42 +33,21 @@
 img {
     max-width: 100%;
     height: auto;
+   
 }
 CSS
 footer h6{
     font-family: "helvetica neue";
     /* thinner font weight to match the delicate visual style and subtle background color */
     font-weight: 300;
-    color: #4c4c4c;
+    color: white;
 }
 
 body{ 
     font-family: "helvetica neue";
-    background-color: grey; 
+    background-color: white ; 
 }
-2 3 4 $name $_POST['name'];
-$email $_POST['email'];
-$message $_POST['message'];
-$human intval($_POST['human']);
-1 2 3 4 5 $from 'Demo Contact Form';
-$to 'example@domain.com';
-$subject 'Message from Contact Demo ';
-$body "From: $name\n E-Mail: $email\n Message:\n $message";
-1 2 3 if (!$_POST['name']) {
-    $errName 'Please enter your name';
-}
-1 2 3 if (!$_POST['email'] || !filter_var($_POST['email'],
-FILTER_VALIDATE_EMAIL)) {
-    $errEmail 'Please enter a valid email address';
-}
-1 2 3 if ($human ! 5) {
-    $errHuman 'Your anti-spam is incorrect';
-}
-<?php echo "<p class='text-danger'>$errName</p>";
-?> #map-canvas {
-    width: 500px;
-    height: 400px;
-    background-color: #CCC;}
+
 
 }
 #arrow {
@@ -77,22 +56,37 @@ FILTER_VALIDATE_EMAIL)) {
   -o-animation:      arrow-jump 1s infinite; /* Opera 12+ */
   animation:         arrow-jump 1s infinite; /* IE 10+, Fx 29+ */
 }
-.fa-angle-down {
-	color: #ffffff;
-    .arrow_scroll {
+.fa-angle-double-down {
+	color: black;
 	bottom: 0;
 	width: 100%;
 	position: absolute;
 }
-@-webkit-keyframes arrow-jump {
-  0%   { opacity: 0;}
-  100% { opacity: 1; 
-        -webkit-transform: translateY(10px);
-        -moz-transform: translateY(10px);
-        -0-transform: translateY(10px);
-        transform: translateY(10px);
-  }
-    
+#work #carousel-example-generic{
+    margin:0 0 5em 0;
+}
+
+#p5Canvas {
+    position:fixed;
+    top:0;
+    left:0
+}
+
+#work #carouselcontainer{
+    padding: 0;
+}
+        
+  
+      }
+ #gallary .carousel-control span {
+    position: absolute;
+    top: 50%;
+    margin-top: -30px;
+    width: 100%;
+    text-align: center;
+    display: block;
+}
+  
         
   
       
