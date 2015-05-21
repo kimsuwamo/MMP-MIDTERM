@@ -1,4 +1,5 @@
 <html>
+    <html>
 
 <head>
     <!--Support of foreigh character-->
@@ -23,7 +24,7 @@
 
     <style>
         #map-canvas {
-            width: 1400px;
+            width: 800px;
             height: 600px;
             margin-top: 8%;
             margin-bottom: 4%;
@@ -80,59 +81,116 @@
         <!-- /.container-fluid -->
     </nav>
 
-    <div class="container-fluid">
-        <div class="row">
-            <address>
-                            <strong>Amazing Images, Inc.</strong><br>
-                            247 Greenwich, Suite 600<br>
-                            New York, NY 10007<br>
-                            <abbr title="Phone">P:</abbr> 1(646) 731-4111
-                      </address>
+     <div id="container-message" class="row">
+                    <div id="contact_sub" class="col-xs-12 col-sm-6 col-md-6">
+                        <div class="contact_info text-right">
+                            <h4>Location</h4>
+                            <address>
+                                199 Chambers Street <br>
+                                New York, NY 10007 <br>
+                            </address>
+                                <p>T: 1(646)-731-4111</p>
+                            <br>
+                            <h4>Project Inquiries</h4>
+                            <p>For all project inquiries please contact <br>
+                                <a href="#inquiryForm">AaliyahAnnDummett.com</a>
+                             </p>
+                        </div>
+                    </div>
 
-            <address>
-                            <strong>Aaliyah Ann Dummett</strong><br>
-                            <a href="mailto:#">AaliyahAnnDummett@Gmail.com</a>
-                      </address>
-            <form class="form-horizontal" role="form" method="post" action="index.php">
-                <div class="form-group">
-                    <label for="name" class="col-sm-2 control-label">Name</label>
-                    <div class="col-sm-8">
-                        <input type="text" class="form-control" id="name" name="name" placeholder="First & Last Name" value="">
+                    <div id="contact_map" class="col-xs-12 col-sm-6 col-md-6">
+                        <iframe width="100%" height="100%" frameborder="0" style="border:0"    scrolling="no" src="https://www.google.com/maps/embed/v1/place?q=199%20Chambers%20Street%2C%20New%20York%2C%20NY%2C%20United%20States&key=AIzaSyDFO3TKWJu6ahLPKKAm1PYq-DUSNNsjHHI"></iframe>
                     </div>
                 </div>
-                <div class="form-group">
-                    <label for="email" class="col-sm-2 control-label">Email</label>
-                    <div class="col-sm-8">
-                        <input type="email" class="form-control" id="email" name="email" placeholder="example@domain.com" value="">
-                    </div>
+                <!-- end container-message -->
+
+                <div id="mailAdvertise" class="row text-center">
+                    <hr class="section-spacer">
+                    <h2>I can hardly wait to hear from you all!!!!</h2>
                 </div>
-                <div class="form-group">
-                    <label for="message" class="col-sm-2 control-label">Message</label>
-                    <div class="col-sm-8">
-                        <textarea class="form-control" rows="4" name="message"></textarea>
-                    </div>
+                <!-- end mailAdvertise -->
+
+                <div id="inquiryForm" class="row">
+                    <form class="form-horizontal">
+                        <fieldset>
+
+                            <!-- Form Name -->
+                            <!-- <legend>Email Me</legend> -->
+
+                            <!-- Text input-->
+                            <div class="form-group">
+                              <label class="col-md-4 control-label" for="textinput">First Name*</label>  
+                              <div class="col-md-6">
+                              <input id="textinput" name="textinput" type="text" placeholder="Enter First Name" class="form-control input-md" required="">
+                               
+                              </div>
+                            </div>
+
+                        <!-- Text input-->
+                        <div class="form-group">
+                          <label class="col-md-4 control-label" for="textinput">Last Name*</label>  
+                          <div class="col-md-6">
+                          <input id="textinput" name="textinput" type="text" placeholder="Enter Last Name" class="form-control input-md" required="">
+                           
+                          </div>
+                        </div>
+
+                        <!-- Text input-->
+                        <div class="form-group">
+                          <label class="col-md-4 control-label" for="textinput">Email*</label>  
+                          <div class="col-md-6">
+                          <input id="textinput" name="textinput" type="text" placeholder="Enter Email" class="form-control input-md" required="">
+                          
+                          </div>
+                        </div>
+
+                        <!-- File Button --> 
+                        <div class="form-group">
+                          <label class="col-md-4 control-label" for="filebutton">(Optional)*</label>
+                          <div class="col-md-4">
+                            <input id="filebutton" name="filebutton" class="input-file" type="file">
+                          </div>
+                        </div>
+
+                        <!-- Textarea -->
+                        <div class="form-group">
+                          <label class="col-md-4 control-label" for="textarea">Inquiry*</label>
+                          <div class="col-md-6">                     
+                            <textarea class="form-control" id="textarea" name="textarea"></textarea>
+                          </div>
+                        </div>
+
+                        <!-- Button -->
+                        <div class="form-group">
+                          <label class="col-md-4 control-label" for="singlebutton"></label>
+                          <div class="col-md-4">
+                            <button id="singlebutton" name="singlebutton" class="btn btn-default">Submit</button>
+                          </div>
+                        </div>
+                    </fieldset>
+                </form>
                 </div>
-                <div class="form-group">
-                    <label for="human" class="col-sm-2 control-label">2 + 3 = ?</label>
-                    <div class="col-sm-8">
-                        <input type="text" class="form-control" id="human" name="human" placeholder="Your Answer">
-                    </div>
-                </div>
-                <div class="form-group">
-                    <div class="col-sm-8 col-sm-offset-2">
-                        <input id="submit" name="submit" type="submit" value="Send" class="btn btn-primary">
-                    </div>
-                </div>
-                <div class="form-group">
-                    <div class="col-sm-8 col-sm-offset-2">
-                        <! Will be used to display an alert to the user>
-                    </div>
-                </div>
-            </form>
-            <div id="map-canvas"></div>
+                <!-- end inquiryForm-->
+
+               
+                <!-- end fifthRow -->
+
+                <footer class="row text-center">
+            <h6>© 2015 Year Round </h6>
+            <h6>Design & Developed by <a href="www.zzyw.co">Aaliyah Ann Dummett</a></h6>
+        </footer>
+                <!-- end footer -->
+            </div>
+            <!-- end container-fluid -->
 
         </div>
+        <!-- end page-content-wrapper -->
+
     </div>
+    <!-- end wrapper -->
+
+
+
 </body>
 
 </html>
